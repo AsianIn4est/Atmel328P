@@ -16,5 +16,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/*
++ test PWN
++
++
+*/
+#include "pwm.h"
 
 #endif /* MAIN_H_ */

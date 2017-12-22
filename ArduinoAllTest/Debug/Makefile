@@ -38,7 +38,8 @@ SUBDIRS :=
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS +=  \
 ../epprom.c \
-../main.c
+../main.c \
+../pwm.c
 
 
 PREPROCESSING_SRCS += 
@@ -49,19 +50,23 @@ ASM_SRCS +=
 
 OBJS +=  \
 epprom.o \
-main.o
+main.o \
+pwm.o
 
 OBJS_AS_ARGS +=  \
 epprom.o \
-main.o
+main.o \
+pwm.o
 
 C_DEPS +=  \
 epprom.d \
-main.d
+main.d \
+pwm.d
 
 C_DEPS_AS_ARGS +=  \
 epprom.d \
-main.d
+main.d \
+pwm.d
 
 OUTPUT_FILE_PATH +=ArduinoAllTest.elf
 
@@ -77,6 +82,8 @@ LINKER_SCRIPT_DEP+=
 
 
 # AVR32/GNU C Compiler
+
+
 
 
 
